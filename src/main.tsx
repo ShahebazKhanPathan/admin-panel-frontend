@@ -6,6 +6,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import SignIn from './components/SignIn.tsx';
 import SignUp from './components/SignUp.tsx';
 import AdminSignIn from './components/AdminSignIn.tsx';
+import Dashboard from './components/Dashboard.tsx';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/admin",
         element: <AdminSignIn/>
+      },
+      {
+        path: "/dashboard",
+        element: <Dashboard/>
       }
     ]
   }
